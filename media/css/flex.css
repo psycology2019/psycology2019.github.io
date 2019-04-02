@@ -1,104 +1,91 @@
-@font-face{
-	font-family: 'WebFont';
-	src: url('OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('OpenSans-Regular-webfont.woff') format('woff');		 
-	font-weight: normal;
-    font-style: normal;
-}
-
-@font-face{
-	font-family: 'WebFontBold';
-	src: url('OpenSans-Bold-webfont.woff2') format('woff2'),
-         url('OpenSans-Bold-webfontt.woff') format('woff');
-	font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
+﻿@font-face {
 font-family: SourseSerif;
-src: url(fonts/aquarelle.ttf ); /* ������ ��� */
+src: url(fonts/philosopherbold.woff); /* жирный шрифт */
 }
+@font-face {
+font-family: SourseSerif2;
+src: url(fonts/Calluna-Regular-webfont.woff); /* обычный шрифт */
+}  
+@font-face {
+font-family: SourseSerif3;
+src: url(fonts/marmelad.woff ); /* курсив мой */
+}
+@font-face {
+font-family: SourseSerif4;
+src: url(fonts/aquarelle.ttf); /* курсив дизайнер */
+} 
 
-html, body{
+ 
+html, body {
   margin: 0;
   padding: 0;
   border: 0;
  }
- 
 img{
     display: block;
     max-width: 100%;
     height: auto;
-}
+} 
 
-.fluid-font-size {
-  font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 16px);
-}
 
-header {
-	background-color: #efefef;	
-    background-attachment: scroll;
-    background-image: url('../img/fon.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+header{
 	margin: auto;
 	width: 100%;
-	overflow: auto;
+	background:url('../img/fon.jpg') no-repeat fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+	background-color: #efefef;	
 }
 
-.title_header, .img_header{
-    margin-top: 70px;
-	float: left;
+.wrap-h{	
+	width: 90%;
+	margin-left: 10%;
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;	
 }
 
-.title_header{
-	margin-left: 5%;
+.headline{	
+	margin-top:70px;
+}
+
+.headline h1{
+	font-family: SourseSerif2;
+	font-size: 48pt;
 	text-align: center;
-	width: 45%;
-    border: 1px red solid;
-
-
+	
 }
 
-.txtline h1{
-	font-family: WebFontBold bold;
-	font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 62px);
-	border: 1px red solid;
-	margin: 0;
-	padding: 0;
-
+.headline h2{
+	font-family: SourseSerif4;
+	font-size: 40pt;   	
 }
 
-.txtline h2{
-	font-family: SourseSerif, italic;
-	font-size: calc( (100vw - 480px)/(1280 - 480) * (46 - 18) + 28px);
-	border: 1px red solid;
-	margin: 0;
-	padding: 0;
+.quote{
+	margin-top: 50px;
+	font-family: SourseSerif2;
+	font-size: 16pt;
+	text-align: center;
+    
 }
-
-.quote p{
-	font-family: WebFont;
-	font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 16px);
-	margin-top: 10%;
+.headfoto{
+	margin-top:70px;
 }
+/*.clear {
+    clear: left; /* Отмена обтекания */
 
 .buttonhead {
-	border: 1px black solid;
-	padding-top: 15%;
-	padding-bottom: 5%;
+	margin-top: 120px;
 }
-
 .buttonhead a {	
 	  text-decoration: none;
 	  outline: none;
 	  display: inline-block;
 	  width: 310px;
 	  padding: 15px 35px;
+	  margin-left: 170px;
 	  border-radius: 10px;
 	  box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
 	  font-family: 'Montserrat', sans-serif;
@@ -113,63 +100,51 @@ header {
   box-shadow: 0 0 10px 0 #ff3836 inset, 0 0 10px 4px #ff3836;
   color: #ff3836;
 }   
-
-.img_header{
-	 width: 50%;	 
-}
-
-.img_header img{
-	width: 100%;
-}
-
+ 
 .section_main{
 	background-color: rgba(251, 251, 251);	
 	width: 100%;
 }
 
 .txt_section{
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 	padding-top: 2%;
 	padding-bottom: 3%;
 }
+.sect_bl{
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	
+}
 
+.sect_info{
+	width: 96%;
+	margin: 0 auto;	
+}
+
+.sect_quest_soc{
+	width: 70%;
+	margin: 0 auto;
+}
+ 
 .txt_section p{
-	font-family: WebFont;
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (28 - 28) + 28px);
+	font-family: SourseSerif2;
+    font-size: 160%;
 	text-align: center;
 }
 
 #p_title{
-	font-family: WebFont;
-	font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 48px);
+	font-family: SourseSerif;
+	font-size: 300%;
 	text-align: center;
 }
 
 .bl_title{
-	font-family: WebFont bold;
-	font-size: calc( (100vw - 480px)/(1280 - 480) * (28 - 12) + 32px);
-	text-align: center;
-}
-
-.sect_bl{
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 2%;
-	padding-bottom: 3%;
-}
-
-.sect_info{
-	width: 100%;
-	margin: 0 auto;
-}
-
-.bimg{
-	text-align:center;
-}
-.sect_quest_soc{
-	width: 90%;
-	margin: 0 auto;
+	font-family: SourseSerif;
+    font-size: 200%;
 }
 
 .sect_quest_soc{
@@ -179,20 +154,16 @@ header {
 .social{
 	position: relative;	
 	height: 200px;
-	border: 1px black solid;
 }
-
 .titl_soc{
 	text-align:center;
 }
-
 .wrapper {
   position: absolute;
   top: 55%;
-  left: 46%;
+  left: 45%;
   transform: translate(-50%, -50%);
   width: 350px;
-  border: 1px black solid;
 }
 
 .wrapper ul {
@@ -268,57 +239,36 @@ header {
 
 @media screen and (max-width: 640px){
   .social{
-	height: 300px;	
+	height: 300px;
+	
 }
   .wrapper {
-    width: 350px;
+      width: 350px;
   }
   .wrapper ul li{
-    margin-top: 10px;
+      margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 340px){
     .social{
-	 height: 500px;	
+	height: 500px;
+	
 }
-    .wrapper {
-    width: 150px;
+  .wrapper {
+      width: 150px;
   }
   .wrapper ul li{
       margin:15px;
   }
 }
 
+
 footer{
 	background-color: rgba(198, 198, 198);
 	height: 100px;
 	width: 100%;	
 }
-
-@media only screen and (max-width:991px){
-	.img_header{
-		display: none;
-	}
-	.title_header{
-		float: none;
-		width: 100%;	
-		margin: 0 auto;
-	}
-    .quote p{
-	margin-top: 5%;
-    }
-.buttonhead {
-	padding-top: 5%;
-    }	
-}
-
-
-
-
-
-
-
 
 .navbar-default {
     border-color: transparent;
@@ -411,4 +361,4 @@ footer{
         font-size: 1.5em;
     }
 }
-  
+ 

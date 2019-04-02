@@ -1,0 +1,193 @@
+﻿@font-face{
+	font-family: 'WebFont';
+	src: url('OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('OpenSans-Regular-webfont.woff') format('woff');		 
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'WebFontBold';
+	src: url('OpenSans-Bold-webfont.woff2') format('woff2'),
+         url('OpenSans-Bold-webfontt.woff') format('woff');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: SourseSerif;
+src: url(fonts/aquarelle.ttf ); /* курсив мой */
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+ }
+ 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header_about{
+	background-color: #efefef;
+	height: 350px;
+	width: 100%;
+}
+
+.section_about{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.txt_about{
+	text-align: justify;
+	font-family: WebFont;
+	font-size: 26px;
+}
+
+.container_skill {
+    width: 100%; /* ширина блока-контейнера */
+    max-width: 960px; /* максимальная ширина контейнера */
+    margin: 0 auto; /* этот стиль центрирует контейнер */
+}
+
+.photo_skill{
+    float: left; /* говорим элементам выстраиваться один за другим */
+    width: 33.333333%; /* устанавливаем ширину элемента */
+    padding: 10px; /* добавляем отступы с каждой стороны */
+    box-sizing: border-box; /* меняем способ вычисления ширины */
+}
+
+.photo_skill img{
+	border: 5px solid #eee;
+    box-sizing: border-box;
+}
+
+.photo_skill a:hover {
+    opacity: 0.5;
+}
+
+.photo_skill a {
+    display: block;
+	position: relative;
+}
+
+.photo_skill:hover > a:after {
+    visibility: visible;
+}
+.photo_skill a:after {
+    content: '';
+    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255,.2);
+}
+
+.navbar-default .navbar-brand {
+    font-family: SourseSerif2 ,Helvetica,Arial,cursive;
+    color: #1ee2e7;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #1ee2e7;
+    background-color: #1ee2e7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #1ee2e7;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #343f3e;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #1ee2e7;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #1ee2e7;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #17d0d5;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: rgba(255, 255, 255,.5);
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+  
