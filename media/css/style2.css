@@ -272,7 +272,7 @@ header{
   color: #ff3836;
 }  
 
-
+/*footer page*/
 footer {
   	background: rgba(198, 198, 198);
   	font-size: 16px;
@@ -313,6 +313,8 @@ footer a{
     font-size: 0.9em;
 	
 }
+
+/*footer page end*/
 
 /*страница product*/
 .section_product{
