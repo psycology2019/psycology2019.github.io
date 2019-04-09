@@ -51,9 +51,6 @@ img{
 	font-size: 36px;
 }
 
-	
-
-
 .txt {
 	text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -103,6 +100,12 @@ img{
 	text-decoration: none;
 	color:  #929292;
 }
+
+.phone img {
+	display :inline;
+
+}
+
 .phone{
 	padding-bottom: 25px;
 	font-size: 30px;
@@ -111,6 +114,16 @@ img{
 .phone a:hover{
 	text-decoration: none;
 	color: #3f3f3f;
+}
+#vb_mb
+{
+display:none
+}
+ 
+@media (max-width:1024px)
+{
+#vb_pk{display:none}
+#vb_mb{display:block}
 }
 
 .maps_room{
@@ -229,6 +242,12 @@ img{
       margin-top: 10px;
   }
 }
+
+.form_contact{
+	width: 70%;
+	margin:0 auto;
+}
+
 
 /*footer page*/
 footer {
