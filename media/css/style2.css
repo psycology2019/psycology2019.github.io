@@ -317,7 +317,8 @@ footer a{
 
 /*страница consultation*/
 .section_product{
-
+	
+   
 	
 }
 
@@ -505,8 +506,6 @@ a {
 
 
 .tab-2 img{
-	width: 450px;
-	height: 270px;
 	display: block;
     margin: 0 auto;
 	padding-top: 3%;
