@@ -37,6 +37,38 @@ font-weight: bold;
 font-style: normal;
 }
 
+@font-face{
+font-family: 'PhilosopherNormal';
+src: url('fonts/philosopher.eot');
+src: url('fonts/philosopher.eot?iefix') format('eot'),
+url('fonts/philosopher.woff') format('woff'),
+url('fonts/philosopher.ttf') format('truetype'),
+url('fonts/philosopher.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'PhilosopherBold';
+src: url('fonts/philosopherbold.eot');
+src: url('fonts/philosopherbold.eot?iefix') format('eot'),
+url('fonts/philosopherbold.woff') format('woff'),
+url('fonts/philosopherbold.ttf') format('truetype'),
+url('fonts/philosopherbold.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: philosopherbolditalic;
+src: url(fonts/philosopherbolditalic.woff);
+}
+
+@font-face {
+font-family: philosopheritalic;
+src: url(fonts/philosopheritalic.woff);
+}
+
  
 html, body {
   margin: 0;
@@ -60,19 +92,40 @@ section{
 	padding-top: 4%;
 	padding-bottom: 3%;
 }
- 
-.txt_section p{
-	font-family: MyWebFont, "Arial", sans-serif;
-    font-size: 180%;
+
+/*     section index 
+*/
+.txt_section h3{
+	font-family: philosopherbolditalic;
+	font-size: 36pt;
 	text-align: center;
 	
 }
 
+.txt_section p{
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+    font-size: 20pt;
+	text-align: justify;
+	line-height: 1.25;
+	margin-top: 3%;
+}
+
+
 #p_title{
-	font-family: MyWebFontBold;
-	font-size: 300%;
+	font-family: PhilosopherBold;
+	font-size: 30pt;
 	text-align: center;
 }
+
+.txt_section ul{
+	  list-style-type: circle;
+      list-style-image: url('../img/marker.png'); /* Путь к изображению маркера */
+	  font-family: PhilosopherNormal, "Arial", sans-serif;
+      font-size: 20pt;
+	  text-align: left;
+	  line-height: 1.5;
+   }
+
 
 .bl_title{
 	font-family: MyWebFontBold;
@@ -229,8 +282,7 @@ header{
 .headline h2{
 	font-family: SourseSerif4, "Arial", sans-serif;
 	font-size: 40pt;
-    
-	
+    	
 }
 .quote{
 	margin-top: 50px;
@@ -280,14 +332,16 @@ footer {
 
 footer 	.container {			
 	padding: 10px 0;
+	width: 70%;
+	margin: 0 auto;
 }
-/*
+
 footer a{
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 5px;
 }
-*/
+
 .pay_system{
 	padding-top: 15px;	
 }
@@ -300,10 +354,12 @@ footer a{
 }
 
 .footer_info {
-
+   padding-top: 10px;
+   padding-bottom: 15px;
 }
 
 .footer_docum_regist{
+	margin-top: 10px;
 	border-left: 2px solid white;	
 }
 
@@ -612,4 +668,91 @@ a {
         font-size: 1.5em;
     }
 }
+
+/* oferta */
+.oferta_all{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+    padding-bottom: 70px;	
+}
+
+.oferta_all h3{
+	font-family: Philosopherbold;
+	font-size: 22pt;
+	text-align: center;
+}
+
+.oferta_all p{
+	font-family: Philosopher;
+	font-size: 16pt;
+	text-align: justify;
+}
+
+#head_ul{
+	font-family: PhilosopherBold;
+	font-size: 16pt;
+}
+
+#info_ul{
+	font-family: Philosopher;
+	font-size: 15pt;
+	text-align: justify;
+	list-style-type: none;
+}
  
+.modalDialog {
+	    position: fixed;
+	    font-family: Arial, Helvetica, sans-serif;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: rgba(0,0,0,0.8);
+	    z-index: 99999;
+	    -webkit-transition: opacity 400ms ease-in;
+	    -moz-transition: opacity 400ms ease-in;
+	    transition: opacity 400ms ease-in;
+	    display: none;
+	    pointer-events: none;
+	} 
+
+	.modalDialog:target {
+	    display: block;
+	    pointer-events: auto;
+	}
+	 
+	.modalDialog > div {
+	    width: 90%;
+		height: 90%;
+		overflow-y: auto;
+	    position: relative;
+	    margin: 3% auto;
+	    padding: 5px 5px 13px 5px;
+	    border-radius: 10px;
+	    background: #fff;
+	    background: -moz-linear-gradient(#fff, #999);
+	    background: -webkit-linear-gradient(#fff, #999);
+	    background: -o-linear-gradient(#fff, #999);
+	}	
+	
+
+	.close {
+	    background: #606061;
+	    color: #FFFFFF;
+	    line-height: 25px;
+	    position: fixed;
+	    right: -1px;
+	    text-align: center;
+	    top: 5px;
+	    width: 30px;
+	    text-decoration: none;
+	    font-weight: bold;
+	    -webkit-border-radius: 12px;
+	    -moz-border-radius: 12px;
+	    border-radius: 12px;
+	    -moz-box-shadow: 1px 1px 3px #000;
+	    -webkit-box-shadow: 1px 1px 3px #000;
+	    box-shadow: 1px 1px 3px #000;
+	}
+	.close:hover { background: #00d9ff; }	
