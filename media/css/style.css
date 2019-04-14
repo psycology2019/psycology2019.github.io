@@ -118,7 +118,7 @@ header{
     font-size: 16pt;
 	text-align: justify;
 	line-height: 1.5;
-	margin-top: 3%;
+	margin-top: 2%;
 }
 
 #p_title{
@@ -278,13 +278,13 @@ header{
 	font-family: PhilosopherNormal, "Arial", sans-serif;
     font-size: 16pt;
 	text-align: justify;
-	line-height: 1.25;
-	
+	line-height: 1.25;	
 }
 	
 .buttonhead {
 	padding-top: 30px;
-	padding-bottom: 30px;	
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 .buttonhead a {	
@@ -292,8 +292,8 @@ header{
 	outline: none;
 	display: inline-block;
 	width: 310px;
-	padding: 15px 35px;
-	margin-left: 35%;
+	padding: 15px 48px;
+	margin: auto;
 	border-radius: 10px;
 	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
 	font-family: PhilosopherBold, sans-serif;
@@ -320,17 +320,17 @@ header{
 .header_about_title{
 	width: 70%;
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 90px;
 }
 .header_about_title p{
    	font-family: Philosopherbold, "Arial", sans-serif;
-    font-size: 36pt;
+    font-size: 26pt;
+	margin: 0 auto;
 }
 
 .section_about{
 	width: 70%;
 	margin: 0 auto;
-
 }
 
 .about_who, .about_whay, .about_skills{
@@ -358,7 +358,7 @@ header{
 }
 .push li {
     position: relative;
-    padding: 20px 0 20px 40px;
+    padding: 5px 0 5px 20px;
     color: #343f3e ;
     font-variant: small-caps;
     font-weight: bold;
@@ -441,6 +441,38 @@ header{
     display: block; 
     height: 0; 
     clear: both;
+}
+.about_whay_mob{
+	display: none;
+}
+.header_about_title_mob{
+	display: none;
+}
+@media (max-width:992px){
+	.about_whay_mob{
+	display: block;
+}
+.about_whay{
+	display: none
+}
+
+	.header_about_title_mob{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.header_about_title{
+	display: none;
+
+}
+.header_about_title_mob p{
+   	font-family: Philosopherbold, "Arial", sans-serif;
+    font-size: 22pt;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 4%;
+}
 }
 /* end about page/
 /* ///////////////////////////////////////////////////*/
@@ -605,7 +637,6 @@ header{
   transition-delay: 350ms;
 }	  
 	
-
 .curs{
     width: 100%;
     height: 100%;
