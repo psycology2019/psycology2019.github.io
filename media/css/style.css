@@ -324,7 +324,7 @@ header{
 }
 .header_about_title p{
    	font-family: Philosopherbold, "Arial", sans-serif;
-    font-size: 26pt;
+    font-size: 2.5vmax;
 	margin: 0 auto;
 }
 
@@ -462,7 +462,7 @@ header{
 	margin: 0 auto;
 	padding-top: 70px;
 }
-.header_about_title{
+/*.header_about_title{
 	display: none;
 
 }
