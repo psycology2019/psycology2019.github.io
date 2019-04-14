@@ -76,25 +76,34 @@ header{
 }
 .title h1{
 	font-family: SourseSerif, "Arial", sans-serif;
-	font-size: 5em;
+	font-size: 4vmax;
 	text-align: center;	
 }
 
 .title h2{
 	font-family: SourseSerif4, "Arial", sans-serif;
-	font-size: 4em;
+	font-size: 3.7vmax;
 	text-align: center;
     	
 }
 .title h3{
-	margin-top: 50px;
+	margin-top: 20%;
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-	font-size: 2em;
+	font-size: 2vmax;
 	text-align: center;
 }
 
 .headfoto{
 	margin-top:70px;
+}
+
+@media (max-width:992px){
+	.headfoto{
+	display: none;}
+	.title{	
+	margin-top:10%;}
+	.title h3{
+	margin-top: 5%;}
 }
 
 .section_info, .txt_section, .quest_soc{
