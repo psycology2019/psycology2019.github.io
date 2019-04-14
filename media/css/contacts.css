@@ -1,4 +1,12 @@
 ﻿@font-face {
+font-family: SourseSerif;
+src: url(fonts/philosopherbold.woff); /* жирный шрифт */
+}
+@font-face {
+font-family: SourseSerif2;
+src: url(fonts/Calluna-Regular-webfont.woff); /* обычный шрифт */
+}  
+@font-face {
 font-family: SourseSerif3;
 src: url(fonts/marmelad.woff ); /* курсив мой */
 }
@@ -8,57 +16,58 @@ src: url(fonts/aquarelle.ttf); /* курсив дизайнер */
 } 
 
 @font-face{
-font-family: 'MyWebFont';
-src: url('fonts/Circe-Regular.eot');
-src: url('fonts/Circe-Regular.eot?iefix') format('eot'),
-url('fonts/Circe-Regular.woff') format('woff'),
-url('fonts/Circe-Regular.ttf') format('truetype'),
-url('fonts/Circe-Regular.svg#webfont') format('svg');
+font-family: 'PhilosopherNormal';
+src: url('fonts/philosopher.eot');
+src: url('fonts/philosopher.eot?iefix') format('eot'),
+url('fonts/philosopher.woff') format('woff'),
+url('fonts/philosopher.ttf') format('truetype'),
+url('fonts/philosopher.svg#webfont') format('svg');
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face{
-font-family: 'MyWebFontBold';
-src: url('fonts/Circe-Bold.eot');
-src: url('fonts/Circe-Bold.eot?iefix') format('eot'),
-url('fonts/Circe-Bold.woff') format('woff'),
-url('fonts/Circe-Bold.ttf') format('truetype'),
-url('fonts/Circe-Bold.svg#webfont') format('svg');
+font-family: 'PhilosopherBold';
+src: url('fonts/philosopherbold.eot');
+src: url('fonts/philosopherbold.eot?iefix') format('eot'),
+url('fonts/philosopherbold.woff') format('woff'),
+url('fonts/philosopherbold.ttf') format('truetype'),
+url('fonts/philosopherbold.svg#webfont') format('svg');
 font-weight: bold;
 font-style: normal;
 }
 
-
 html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
- }
-
-header, section{
-	display:block;
+	margin: 0;
+    padding: 0;
+    border: 0;
 }
-
 img{
     display: block;
     max-width: 100%;
     height: auto;
 } 
+header, section{
+	display:block;
+}
+section{
+	background-color: rgba(251, 251, 251);	
+	width: 100%;
+}
+
 
 .info_contact h3{
-	font-family: 'MyWebFontBold';
+	font-family: 'PhilosopherBold';
 	font-size: 36px;
 }
 
-.txt {
+#txt {
 	text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: PhilosopherNormal ,Helvetica,Arial,cursive;
     font-weight: 400;
     letter-spacing: 1px;
     color: #343f3e;
 }
-
 
 .tl_header{
 	background-color: #c2dfdc;
@@ -68,8 +77,9 @@ img{
 	color: #3f3f3f;
 	
 }
+
 .tl_header h2{
-	font-family: MyWebFontBold;
+	font-family: PhilosopherBold;
 	font-size: 48pt;
 	margin: 0;
 	padding-top:80px;
@@ -77,17 +87,19 @@ img{
 
 .tl_header p{
 	margin: 0;
-	font-family: SourseSerif3;
+	font-family: PhilosopherNormal ,Helvetica,Arial,cursive;
 	font-size: 55pt;
 	padding-top: 20px;
 	padding-bottom: 30px;
 }
+
 .info_contact{
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 25px;
 }
+
 .info_contact p{
 	font-size: 34px;
     font-weight: 300;
@@ -115,15 +127,16 @@ img{
 	text-decoration: none;
 	color: #3f3f3f;
 }
-#vb_mb
-{
-display:none
+
+#vb_mb{
+	display:none
 }
  
-@media (max-width:1024px)
-{
-#vb_pk{display:none}
-#vb_mb{display:block}
+@media (max-width:1024px){
+    #vb_pk{
+		display:none}
+    #vb_mb{
+		display:block}
 }
 
 .maps_room{
@@ -141,7 +154,6 @@ display:none
 	float: left;
 	width: 49%;
 	padding-top: 0.6%;
-	
 }
 
 .social{
@@ -228,12 +240,9 @@ display:none
   transition: all 0.5s ease;
 }
 
-
-
 @media screen and (max-width: 640px){
   .social{
-	height: 300px;
-	
+	height: 300px;	
 }
   .wrapper {
       width: 350px;
@@ -247,53 +256,6 @@ display:none
 	width: 70%;
 	margin:0 auto;
 }
-
-
-/*footer page*/
-footer {
-  	background: rgba(198, 198, 198);
-  	font-size: 16px;
-}
-
-
-footer 	.container {			
-	padding: 10px 0;
-}
-/*
-footer a{
-	display: block;
-	font-size: 14px;
-	margin-bottom: 5px;
-}
-*/
-.pay_system{
-	padding-top: 15px;	
-}
-
-.pay_system img{
-	display: inline-block;
-	max-height: 40px;
-    margin-right: 15px;
-	
-}
-
-.footer_info {
-
-}
-
-.footer_docum_regist{
-	border-left: 2px solid white;	
-}
-
-.footer_docum_regist p{
-	font-family: MyWebFont, "Arial", sans-serif;
-    font-size: 0.9em;
-	
-}
-
-/*footer page end*/
-
-
 
 
 @media screen and (max-width: 340px){
@@ -335,14 +297,14 @@ footer a{
 }  
 
 
-
+/* nav */
 .navbar-default {
     border-color: transparent;
     background-color: rgba(255, 255, 255,.2);
 }
 
 .navbar-default .navbar-brand {
-    font-family: SourseSerif2 ,Helvetica,Arial,cursive;
+    font-family: PhilosopherNormal ,Helvetica,Arial,cursive;
     color: #1ee2e7;
 }
 
@@ -373,8 +335,8 @@ footer a{
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Montserrat,"PhilosopherNormal",Helvetica,Arial,sans-serif;
+    font-weight: 700;
     letter-spacing: 1px;
     color: #343f3e;
 }
@@ -408,7 +370,7 @@ footer a{
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 4em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -424,6 +386,87 @@ footer a{
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2em;
     }
+}
+
+/* nav end*/
+
+/*footer page*/
+footer {
+  	background: rgba(198, 198, 198);
+  	font-size: 16px;
+}
+
+
+footer 	.container {			
+	padding: 10px 0;
+	width: 70%;
+	margin: 0 auto;
+}
+
+footer a{
+	display: block;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.pay_system{
+	padding-top: 15px;	
+}
+
+.pay_system img{
+	display: inline-block;
+	max-height: 40px;
+    margin-right: 15px;	
+}
+
+.footer_info {
+   padding-top: 10px;
+   padding-bottom: 15px;
+}
+
+.footer_docum_regist{
+	margin-top: 10px;
+	border-left: 2px solid white;	
+}
+
+.footer_docum_regist p{
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+    font-size: 0.9em;
+	
+}
+
+/*footer page end*/
+
+/* oferta and politic_confend */
+.oferta_all{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+    padding-bottom: 70px;	
+}
+
+.oferta_all h3{
+	font-family: Philosopherbold;
+	font-size: 22pt;
+	text-align: center;
+}
+
+.oferta_all p{
+	font-family: Philosopher;
+	font-size: 16pt;
+	text-align: justify;
+}
+
+#head_ul{
+	font-family: PhilosopherBold;
+	font-size: 16pt;
+}
+
+#info_ul{
+	font-family: Philosopher;
+	font-size: 15pt;
+	text-align: justify;
+	list-style-type: none;
 }
