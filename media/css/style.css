@@ -70,32 +70,38 @@ header{
 .wrap-h{	
 	width: 90%;
 	margin-left: 10%;
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;	
 }
-.title{	
-	margin-top:20%;
+
+.headline{	
+	margin-top:10%;
 }
+
 .title h1{
 	font-family: SourseSerif, "Arial", sans-serif;
-	font-size: 4vmax;
+	font-size: 5em;
 	text-align: center;	
 }
 
 .title h2{
 	font-family: SourseSerif4, "Arial", sans-serif;
-	font-size: 3.7vmax;
+	font-size: 4em;
 	text-align: center;
     	
 }
 .title h3{
-	margin-top: 20%;
+	margin-top: 15%;
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-	font-size: 2vmax;
+	font-size: 2em;
 	text-align: center;
 }
 
-.headfoto{
+.headfoto{	
 	margin-top:70px;
 }
+
 
 @media (max-width:992px){
 	.headfoto{
@@ -104,6 +110,20 @@ header{
 	margin-top:10%;}
 	.title h3{
 	margin-top: 5%;}
+}
+
+@media screen and (max-width: 640px){
+	.title h1{
+		font-size: 3em;
+	}
+
+	.title h2{
+		font-size: 3em;			
+	}
+	.title h3{
+		font-size: 1em;
+	}	
+	
 }
 
 .section_info, .txt_section, .quest_soc{
@@ -604,14 +624,14 @@ header{
   box-shadow: none;
 }
 .btn-buy:hover:before {
-  content: '';
-  height: 80%;
-  width: 2px;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  background: #4A90E2;
-  transition: all 300ms ease;
+	content: '';
+	height: 80%;
+	width: 2px;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	background: #4A90E2;
+	transition: all 300ms ease;
 }
 .btn-buy:hover:after {
   content: '';
