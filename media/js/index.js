@@ -6,7 +6,6 @@
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-	console.log('ghbdtn');
 });
 
 // Highlight the top nav as scrolling occurs
@@ -17,5 +16,4 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
-	console.log('1');
 });
