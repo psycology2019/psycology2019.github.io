@@ -109,21 +109,21 @@ header{
 
 .txt_section h3{
 	font-family: philosopherbolditalic;
-	font-size: 36pt;
+	font-size: 30pt;
 	text-align: center;	
 }
 
 .txt_section p{
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
 	text-align: justify;
-	line-height: 1.25;
+	line-height: 1.5;
 	margin-top: 3%;
 }
 
 #p_title{
 	font-family: PhilosopherBold;
-	font-size: 30pt;
+	font-size: 28pt;
 	text-align: center;
 }
 
@@ -131,7 +131,7 @@ header{
 	list-style-type: circle;
     list-style-image: url('../img/marker.png'); /* Путь к изображению маркера */
     font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
     text-align: left;
     line-height: 1.5;
 }
@@ -296,7 +296,7 @@ header{
 	margin-left: 35%;
 	border-radius: 10px;
 	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
-	font-family: 'Montserrat', sans-serif;
+	font-family: PhilosopherBold, sans-serif;
 	font-weight: bold;
 	font-size: 14pt;
 	letter-spacing: 2px;
@@ -309,7 +309,93 @@ header{
     color: #ff3836;
 }  
 /* index page*/
+/* ///////////////////////////////////////////////////*/
+/* about page*/
 
+.header_about{
+	background-color: #efefef;
+	height: 350px;
+	width: 100%;
+}
+
+.section_about{
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+.about_who, .about_whay, .about_skills{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.section_about h2{
+	font-family: Philosopherbold, "Arial", sans-serif;
+    font-size: 24pt;
+	text-align: center;
+
+}
+
+.section_about p{
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+    font-size: 14pt;
+	text-align: justify;
+	line-height: 1.25;
+	margin-top: 3%;
+}
+
+.container_skill {
+    width: 100%; /* ширина блока-контейнера */
+    max-width: 960px; /* максимальная ширина контейнера */
+    margin: 0 auto; /* этот стиль центрирует контейнер */
+}
+
+.photo_skill{
+    float: left; /* говорим элементам выстраиваться один за другим */
+    width: 33.333333%; /* устанавливаем ширину элемента */
+    padding: 10px; /* добавляем отступы с каждой стороны */
+    box-sizing: border-box; /* меняем способ вычисления ширины */
+}
+
+.photo_skill img{
+	border: 5px solid #eee;
+    box-sizing: border-box;
+}
+
+.photo_skill a:hover {
+    opacity: 0.5;
+}
+
+.photo_skill a {
+    display: block;
+	position: relative;
+}
+
+.photo_skill:hover > a:after {
+    visibility: visible;
+}
+.photo_skill a:after {
+    content: '';
+    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+/* end about page/
+/* ///////////////////////////////////////////////////*/
 /*страница consultation*/
 .section_product{
 
@@ -682,7 +768,7 @@ footer a{
 }
 
 .oferta_all p{
-	font-family: Philosopher;
+	font-family: PhilosopherNormal;
 	font-size: 16pt;
 	text-align: justify;
 }
