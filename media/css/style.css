@@ -317,6 +317,15 @@ header{
 	height: 350px;
 	width: 100%;
 }
+.header_about_title{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.header_about_title p{
+   	font-family: Philosopherbold, "Arial", sans-serif;
+    font-size: 36pt;
+}
 
 .section_about{
 	width: 70%;
@@ -333,7 +342,6 @@ header{
 	font-family: Philosopherbold, "Arial", sans-serif;
     font-size: 24pt;
 	text-align: center;
-
 }
 
 .section_about p{
@@ -342,6 +350,46 @@ header{
 	text-align: justify;
 	line-height: 1.25;
 	margin-top: 3%;
+}
+
+.push {
+    list-style: none;
+    font-family: "PhilosopherNormal";
+}
+.push li {
+    position: relative;
+    padding: 20px 0 20px 40px;
+    color: #343f3e ;
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+}
+.push li:before {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4F5151;
+    content: "";
+    left: 0;
+    transition: .3s ease-in-out;
+    top: 27px;
+}
+.push li:after {
+    position: absolute;
+    border-left: 1px dotted #4F5151;
+    width: 1px;
+    bottom: -12px;
+    content: "";
+    left: 3px;
+    top: 48px;
+}
+.push li:hover:before{
+	box-shadow: 0 0 0 10px rgba(0,0,0,.2)
+	}
+	
+.push li:last-child:after {
+	content: none;
 }
 
 .container_skill {
@@ -389,10 +437,10 @@ header{
 }
 
 #gallery:after { 
-   content: '';
-   display: block; 
-   height: 0; 
-   clear: both;
+    content: '';
+    display: block; 
+    height: 0; 
+    clear: both;
 }
 /* end about page/
 /* ///////////////////////////////////////////////////*/
@@ -493,7 +541,7 @@ header{
   padding: 4em 1em;
 }
 
-a {
+.section_product a {
   text-decoration: none;
   font-weight: 500;
   position: relative;
