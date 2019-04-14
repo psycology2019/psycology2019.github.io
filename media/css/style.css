@@ -49,6 +49,8 @@ img{
     max-width: 100%;
     height: auto;
 } 
+html { font-size: 100% } /* это значит, что по умолчанию размер шрифта будет 16px*/
+
 section{
 	background-color: rgba(251, 251, 251);	
 	width: 100%;
@@ -68,31 +70,26 @@ header{
 .wrap-h{	
 	width: 90%;
 	margin-left: 10%;
-	display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-
-	
 }
-.headline{	
-	margin-top:180px;
+.title{	
+	margin-top:20%;
 }
-.headline h1{
+.title h1{
 	font-family: SourseSerif, "Arial", sans-serif;
-	font-size: 48pt;
+	font-size: 5em;
 	text-align: center;	
 }
 
-.headline h2{
+.title h2{
 	font-family: SourseSerif4, "Arial", sans-serif;
-	font-size: 40pt;
-	padding-left: 15px;
+	font-size: 4em;
+	text-align: center;
     	
 }
-.quote{
+.title h3{
 	margin-top: 50px;
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-	font-size: 16pt;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -324,7 +321,7 @@ header{
 }
 .header_about_title p{
    	font-family: Philosopherbold, "Arial", sans-serif;
-    font-size: 26pt;
+    font-size: 2.5vmax;
 	margin: 0 auto;
 }
 
@@ -445,9 +442,7 @@ header{
 .about_whay_mob{
 	display: none;
 }
-.header_about_title_mob{
-	display: none;
-}
+
 @media (max-width:992px){
 	.about_whay_mob{
 	display: block;
@@ -456,23 +451,6 @@ header{
 	display: none
 }
 
-	.header_about_title_mob{
-	display: block;
-	width: 70%;
-	margin: 0 auto;
-	padding-top: 70px;
-}
-.header_about_title{
-	display: none;
-
-}
-.header_about_title_mob p{
-   	font-family: Philosopherbold, "Arial", sans-serif;
-    font-size: 22pt;
-	margin: 0 auto;
-	text-align: center;
-	padding-top: 4%;
-}
 }
 /* end about page/
 /* ///////////////////////////////////////////////////*/
