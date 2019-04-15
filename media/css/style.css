@@ -256,10 +256,10 @@ header{
 
 #lid_text_bold{
 	font-family: PhilosopherBold, "Arial", sans-serif;
-	
+	text-align: center;
 }
 .lid_button{
-    margin-top:15%;
+    margin-top:35%;
 }
 
 .lid_button h3{
@@ -295,6 +295,18 @@ header{
     box-shadow: 0 0 10px 0 #ff3836 inset, 0 0 10px 4px #ff3836;
     color: #ff3836;
 } 
+@media screen and (max-width:1280px){
+    .social{
+	  height: 250px;	
+    }
+  .wrapper {
+      width: 350px;
+	      left: 60%;
+    }
+  .wrapper ul li{
+      margin-top: 5px;
+    }
+}
 
 @media screen and (max-width:992px){
 	.headfoto{
@@ -303,19 +315,24 @@ header{
 	margin-top:10%;}
 	.title h3{
 	margin-top: 5%;}
+	.lid_button{
+    margin-top:2%;}
+	.wrapper {
+	left: 45%;
+    }
 }
+
 
 @media screen and (max-width: 640px){
     .social{
-	  height: 300px;
-	
-}
+	  height: 300px;	
+    }
   .wrapper {
       width: 350px;
-  }
+    }
   .wrapper ul li{
       margin-top: 10px;
-  }
+    }
     .wrap-h{	
 		width: 90%;
 		margin: 0 auto;	
@@ -325,34 +342,31 @@ header{
 	}
 	.title h3{
 		font-size: 1em;
-	}
-	
+	}	
 	.txt_section h3{
 		font-size: 2em;
 	}
-
 	.txt_section p, .txt_section ul{
 		font-size: 0.6em;
 	}
 	#p_title{
 		font-size: 0.7em;
-	}	
+	}
+	
 }
 
 @media screen and (max-width: 340px){
     .social{
-	height: 500px;
-	
-}
-  .wrapper {
+	height: 500px;	
+    }
+   .wrapper {
       width: 150px;
-  }
-  .wrapper ul li{
+    }
+    .wrapper ul li{
       margin:15px;
-  }
+    }
 }
 
- 
 /* index page*/
 /* ///////////////////////////////////////////////////*/
 /* about page*/
@@ -378,6 +392,10 @@ header{
 	margin: 0 auto;
 }
 
+.section_about img{
+	margin-top: 13%;
+}
+
 .about_who, .about_whay, .about_skills{
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -391,10 +409,9 @@ header{
 
 .section_about p{
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 14pt;
+    font-size: 1.7em;
 	text-align: justify;
 	line-height: 1.25;
-	margin-top: 3%;
 }
 
 .push {
@@ -500,12 +517,121 @@ header{
 }
 
 }
+@media screen and (max-width: 640px){
+	.section_about p{
+    font-size: 1.3em;
+	line-height: 1;
+}
+
+.section_about{
+	width: 85%;
+}
+}
 /* end about page/
+/*/////////////////////////////////////////////////////*/
+/* lessons page*/
+.section_lesson{
+	background-color: #ffffff;
+	width: 100%;
+	
+}
+
+.img_lessons{
+   margin-top: 70px;
+   text-align: center;
+}
+.img_lessons img{
+	display: inline-block;
+	width: 25%;
+    height: 25%;
+}
+
+
+.txt_lessons{
+	width: 70%;
+	margin: 0 auto;
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+    font-size: 1.6em;
+	text-align: justify;
+	line-height: 1.3em;
+	padding-top: 2%;
+	background-color: #ffffff;
+}
+
+.button_lesson{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+}
+
+.form_lesson{
+	display: none;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.btn_lesson{
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 0px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: #7681b9;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: auto;
+  text-decoration: none;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5000px;
+  animation: ripple 1s ease forwards;
+  z-index: 1;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(100);
+  }
+}
+
+
+@media screen and (max-width: 640px){
+	.section_lesson img{
+		width: 30%;
+		height: 30%;
+	}
+	.txt_lessons{
+		width: 85%;
+        font-size: 1.2em;
+    }
+	.form_lesson{
+	    width: 80%;}
+}
 /* ///////////////////////////////////////////////////*/
 /*страница consultation*/
 .section_product{
 
-	
+    	
 }
 
 .section_product h1{
@@ -717,6 +843,7 @@ header{
 /*страница consultation end*/
 
 /* nav */
+
 .navbar-default {
     border-color: transparent;
     background-color: rgba(255, 255, 255,.2);
