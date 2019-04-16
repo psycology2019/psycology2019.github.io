@@ -82,6 +82,10 @@ h1{
 	font-size: 5em;
 	text-align: center;	
 }
+
+a{
+	color: #1ee2e7;
+}
 /* index page*/
 .wrap-h{	
 	width: 90%;
@@ -292,21 +296,22 @@ h1{
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-align: center;
+
 }
 
 .buttonhead a {	
 	text-decoration: none;
 	outline: none;
 	display: inline-block;
-	width: 310px;
-	padding: 15px 48px;
+	width: 270px;
+	padding: 12px 30px;
 	margin: auto;
 	border-radius: 10px;
 	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
 	font-family: PhilosopherBold, sans-serif;
 	font-weight: bold;
 	font-size: 0.8em;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: white;
 	transition: .15s ease-in-out;
 }
@@ -521,7 +526,7 @@ h1{
 	.about_whay_mob{
 	display: block;
 }
-.about_whay{
+    .about_whay{
 	display: none
 }
 
@@ -555,7 +560,6 @@ h1{
     height: 25%;
 }
 
-
 .txt_lessons{
 	width: 70%;
 	margin: 0 auto;
@@ -583,17 +587,17 @@ h1{
 }
 
 .btn{
-  display: inline-block;
-  padding: 15px 40px;
-  border-radius: 0px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  background-color: #7681b9;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: auto;
-  text-decoration: none;
+	  display: inline-block;
+	  padding: 15px 40px;
+	  border-radius: 0px;
+	  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	  background-color: #7681b9;
+	  color: #fff;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  cursor: pointer;
+	  margin: auto;
+	  text-decoration: none;
 }
 
 .ripple {
@@ -637,22 +641,9 @@ h1{
 	    width: 80%;}
 }
 /* ///////////////////////////////////////////////////*/
-/*страница consultation*/
+/*страница consultation */
 .header_consult{
 	height: 250px;
-
-}
-
-.section_product{
-    background-color: #efefef;
-    	
-}
-
-.section_product h1{
-	margin-top: 80px;
-	font-family: PhilosopherBold, "Arial", sans-serif;
-	font-size: 48pt;
-	text-align: center;
 }
 
 .product_all{
@@ -683,6 +674,7 @@ h1{
     line-height: 1em;
     padding: 2rem 0;
     text-align: center; }
+	
   .tabs [class^="tab"] [type="radio"],
   .tabs [class*=" tab"] [type="radio"] {
     border-bottom: 1px solid rgba(239, 237, 239, 0.5);
@@ -696,13 +688,16 @@ h1{
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+	
     .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
     .tabs [class*=" tab"] [type="radio"]:hover,
     .tabs [class*=" tab"] [type="radio"]:focus {
       border-bottom: 1px solid #1ee2e7; }
+	  
     .tabs [class^="tab"] [type="radio"]:checked,
     .tabs [class*=" tab"] [type="radio"]:checked {
       border-bottom: 2px solid #1ee2e7; }
+	  
     .tabs [class^="tab"] [type="radio"]:checked + div,
     .tabs [class*=" tab"] [type="radio"]:checked + div {
       opacity: 1; }
@@ -820,11 +815,11 @@ h1{
   width: 550px;
   height: 300px;
   padding: 1em 3em;
-  border: 3px solid #4A90E2;
+  border: 3px solid #1ee2e7;
   font-family: PhilosopherNormal, "Arial", sans-serif;
   font-size: 36pt;  
   transition: all 300ms ease;
-  box-shadow: 0px 4px 10px 2px #4A90E2;
+  box-shadow: 0px 4px 10px 2px #1ee2e7;
 }
 
 .tab-2 img{
@@ -836,8 +831,8 @@ h1{
 #name_conslt{
 	text-transform: uppercase;
 	font-family: PhilosopherBold, "Arial", sans-serif;
-	font-size: 2.3vw;
-	color: #4A90E2;	
+	font-size: 2.3em;
+	color: #1ee2e7;	
 }
 
 .consl{
@@ -847,8 +842,38 @@ h1{
 
 .consl h3{
 	font-family: PhilosopherBold, "Arial", sans-serif;
-	font-size: 2.3vw;
+	font-size: 1.5em;
 }
+
+@media screen and (max-width: 992px){
+	.product_all{
+	width: 90%;	
+
+}
+   
+}
+
+@media screen and (max-width: 640px){
+#name_conslt{
+	font-size: 1.3em;
+}
+.consl h3{
+	font-size: 1em;
+
+}
+
+.section_product h1{
+	font-size: 2em;
+}
+
+.product_all p{
+	font-size: 0.7em;
+}
+
+}
+   
+
+
 /*страница consultation end*/
 
 /* nav */
@@ -964,6 +989,7 @@ footer a{
 	display: block;
 	font-size: 16px;
 	margin-bottom: 5px;
+	color: #fff;
 }
 
 .pay_system{
@@ -1024,4 +1050,39 @@ footer a{
 	font-size: 15pt;
 	text-align: justify;
 	list-style-type: none;
+}
+
+
+#go-top {
+  position: fixed; 
+  bottom: 25px; 
+  right: 50px;
+  text-align: center;
+  cursor:pointer; 
+  display:none;
+  width: 80px;
+  height: 30px;
+  background: #E8E8E8;
+  line-height: 30px;
+  border-radius: 0px;
+}
+
+#go-top:hover {
+  background: #343f3e;
+  color: #fff;
+}
+@media screen and (max-width: 340px){
+	#go-top {
+  position: fixed; 
+  bottom: 25px; 
+  right: 30px;
+  text-align: center;
+  cursor:pointer; 
+  display:none;
+  width: 60px;
+  height: 20px;
+  background: #E8E8E8;
+  line-height: 30px;
+  border-radius: 0px;
+}
 }
