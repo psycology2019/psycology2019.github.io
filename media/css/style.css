@@ -56,7 +56,10 @@ section{
 	width: 100%;
 }
 
-/* index page*/
+#bold_text{	
+   	font-family: PhilosopherBold, "Arial", sans-serif;	
+}
+
 header{
 	margin: auto;
 	width: 100%;
@@ -67,6 +70,19 @@ header{
     background-size: 100%;
 	background-color: #efefef;	
 }
+
+.header_title{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
+h1{
+	font-family: SourseSerif, "Arial", sans-serif;
+	font-size: 5em;
+	text-align: center;	
+}
+/* index page*/
 .wrap-h{	
 	width: 90%;
 	margin-left: 10%;
@@ -254,18 +270,22 @@ header{
 	line-height: 1.25;	
 }
 
+.lid_descript li{
+	margin-bottom: 4%;
+}
+
 #lid_text_bold{
 	font-family: PhilosopherBold, "Arial", sans-serif;
 	text-align: center;
 }
 .lid_button{
     margin-top:35%;
+	text-align: center;
 }
 
 .lid_button h3{
     font-family: PhilosopherBold, "Arial", sans-serif;
 	font-size: 1.5em;
-	text-align: center;
 }
 	
 .buttonhead {
@@ -370,17 +390,6 @@ header{
 /* index page*/
 /* ///////////////////////////////////////////////////*/
 /* about page*/
-
-.header_about{
-	background-color: #efefef;
-	height: 350px;
-	width: 100%;
-}
-.header_about_title{
-	width: 70%;
-	margin: 0 auto;
-	padding-top: 90px;
-}
 .header_about_title p{
    	font-family: Philosopherbold, "Arial", sans-serif;
     font-size: 2.5vmax;
@@ -629,8 +638,13 @@ header{
 }
 /* ///////////////////////////////////////////////////*/
 /*страница consultation*/
-.section_product{
+.header_consult{
+	height: 250px;
 
+}
+
+.section_product{
+    background-color: #efefef;
     	
 }
 
@@ -642,7 +656,7 @@ header{
 }
 
 .product_all{
-	width: 70%;
+	width: 70%;	
 	margin: 0 auto;
 	padding-top: 2%;
 	padding-bottom: 3%;
@@ -835,11 +849,6 @@ header{
 	font-family: PhilosopherBold, "Arial", sans-serif;
 	font-size: 2.3vw;
 }
-
-#bold_text{	
-   	font-family: PhilosopherBold, "Arial", sans-serif;	
-}
-
 /*страница consultation end*/
 
 /* nav */
