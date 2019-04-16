@@ -12,7 +12,7 @@ $(this).find(".ripple-effect").css({
   });
 });	
 	
-$('.btn_lesson').click(function(){
+$('.btn').click(function(){
   $(".form_lesson").fadeToggle(100);
 });  
 
