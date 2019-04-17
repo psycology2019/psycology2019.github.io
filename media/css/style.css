@@ -172,6 +172,7 @@ a{
 .bl_title{
 	font-family: PhilosopherBold;
     font-size: 36px;
+	text-align:center;
 }
 
 .bimg{
@@ -232,18 +233,14 @@ a{
 .social{
 	position: relative;	
 	height: 200px;
-	border: 0.5px solid black;
 }
-.titl_soc{
-	text-align:center;
-}
+
 .wrapper {
 	position: absolute;
     top: 55%;
     left: 45%;
     transform: translate(-50%, -50%);
     width: 350px;
-	border: 0.5px solid red;
 }
 
 .wrapper ul {
@@ -337,8 +334,16 @@ a{
 @media screen and (max-width:992px){
 	.headfoto{
 		display: none;}
+    .wrap-h{	
+		width: 90%;
+		margin: 0 auto;	
+    } 		
 	.title{
-		margin-top:10%;}
+		width: 90%;
+		margin: 0 auto;
+		padding-top:10%;
+		text-align: center;
+	}
 	.title h3{
 		margin-top: 5%;}
 	.section_info, .txt_section, .quest_soc{
@@ -359,12 +364,8 @@ a{
         width: 350px;
     }
    .wrapper ul li{
-      margin-top: 10px;
+        margin-top: 10px;
     }
-    .wrap-h{	
-		width: 90%;
-		margin: 0 auto;	
-    }   
 	.title h1, .title h2{
 		font-size: 3em;
 	}
