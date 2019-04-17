@@ -37,8 +37,6 @@ font-weight: bold;
 font-style: normal;
 }
 
-
- 
 html, body {
 	margin: 0;
     padding: 0;
@@ -56,10 +54,6 @@ section{
 	width: 100%;
 }
 
-#bold_text{	
-   	font-family: PhilosopherBold, "Arial", sans-serif;	
-}
-
 header{
 	margin: auto;
 	width: 100%;
@@ -71,17 +65,35 @@ header{
 	background-color: #efefef;	
 }
 
-.header_title{
-	width: 70%;
+.header_page{
+	margin: auto;
+	width: 100%;
+	background:url('../img/fon.jpg') no-repeat fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+	background-color: #efefef;	
+}
+
+.block_indent{
+	width: 75%;
 	margin: 0 auto;
+}
+
+.header_title{
 	padding-top: 70px;
 }
 
-h1{
-	font-family: SourseSerif, "Arial", sans-serif;
-	font-size: 5em;
-	text-align: center;	
+.txt_p{
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+    font-size: 18px;
 }
+
+#bold_text{	
+   	font-family: PhilosopherBold, "Arial", sans-serif;	
+}
+
 
 a{
 	color: #1ee2e7;
@@ -123,45 +135,98 @@ a{
 }
 
 .section_info, .txt_section, .quest_soc{
-	width: 70%;
-	margin: 0 auto;
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
 
+
 .txt_section h3{
 	font-family: philosopherbolditalic;
-	font-size: 3.7em;
+	font-size: 48px;
 	text-align: center;	
 }
 
 .txt_section p{
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 0.4em;
-	text-align: justify;
-	line-height: 1.3em;
+    font-size: 22px;	
+	text-align: left;
 	margin-top: 2%;
 }
 
 #p_title{
 	font-family: PhilosopherBold;
-	font-size: 0.6em;
+	font-size: 36px;
 	text-align: center;
+	
 }
 
 .txt_section ul{
 	list-style-type: circle;
     list-style-image: url('../img/marker.png'); /* Путь к изображению маркера */
     font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 0.4em;
+    font-size: 22px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 .bl_title{
 	font-family: PhilosopherBold;
-    font-size: 2.5em;
+    font-size: 36px;
+}
+
+.bimg{
+	text-align:center;
+}
+			
+.lidmagnit_txt{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	text-align: left;
+	line-height: 1.25;
+}
+
+.lid_descript li{
+	margin-bottom: 4%;
+}
+
+#lid_text_bold{
+	font-family: PhilosopherBold, "Arial", sans-serif;
+	font-size: 20px;
 	text-align: center;
+}
+.lid_button{
+	padding-top: 5%;
+	text-align: center;
+}
+	
+.buttonhead {
+	padding-top: 20%;
+	padding-bottom: 4%;
+	text-align: center;
+}
+
+.buttonhead a {	
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	width: 270px;
+	padding: 12px 30px;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
+	font-family: PhilosopherBold, sans-serif;
+	font-weight: bold;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	color: white;
+	transition: .15s ease-in-out;
+}
+
+.buttonhead a:hover {
+    box-shadow: 0 0 10px 0 #ff3836 inset, 0 0 10px 4px #ff3836;
+    color: #ff3836;
 }
 
 .social{
@@ -250,112 +315,48 @@ a{
     transition: all 0.5s ease;
 }
 
-/*.clear {
+.clear {
     clear: left; /* Отмена обтекания */
-.lidmagnit{
-	margin: auto;
-	width: 100%;
-	background:url('../img/fon.jpg') no-repeat fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-	background-color: #efefef;	
-}			
-	
-.lidmagnit_txt{
-	width: 70%;
-	margin: 0 auto;
-	padding-top: 2%;
-	padding-bottom: 1%;
-	font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 1.4em;
-	text-align: justify;
-	line-height: 1.25;	
 }
 
-.lid_descript li{
-	margin-bottom: 4%;
-}
-
-#lid_text_bold{
-	font-family: PhilosopherBold, "Arial", sans-serif;
-	text-align: center;
-}
-.lid_button{
-    margin-top:35%;
-	text-align: center;
-}
-
-.lid_button h3{
-    font-family: PhilosopherBold, "Arial", sans-serif;
-	font-size: 1.5em;
-}
-	
-.buttonhead {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-
-}
-
-.buttonhead a {	
-	text-decoration: none;
-	outline: none;
-	display: inline-block;
-	width: 270px;
-	padding: 12px 30px;
-	margin: auto;
-	border-radius: 10px;
-	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
-	font-family: PhilosopherBold, sans-serif;
-	font-weight: bold;
-	font-size: 0.8em;
-	letter-spacing: 1px;
-	color: white;
-	transition: .15s ease-in-out;
-}
-
-.buttonhead a:hover {
-    box-shadow: 0 0 10px 0 #ff3836 inset, 0 0 10px 4px #ff3836;
-    color: #ff3836;
-} 
 @media screen and (max-width:1280px){
     .social{
-	  height: 250px;	
+		height: 250px;	
     }
-  .wrapper {
-      width: 350px;
-	      left: 60%;
+   .wrapper {
+        width: 350px;
+	    left: 60%;
     }
   .wrapper ul li{
-      margin-top: 5px;
+        margin-top: 5px;
     }
 }
 
 @media screen and (max-width:992px){
 	.headfoto{
-	display: none;}
-	.title{	
-	margin-top:10%;}
+		display: none;}
+	.title{
+		margin-top:10%;}
 	.title h3{
-	margin-top: 5%;}
+		margin-top: 5%;}
+	.section_info, .txt_section, .quest_soc{
+		width: 90%;
+    }	
 	.lid_button{
-    margin-top:2%;}
+        margin-top:2%;}
 	.wrapper {
-	left: 45%;
+	    left: 45%;
     }
 }
-
 
 @media screen and (max-width: 640px){
     .social{
 	  height: 300px;	
     }
-  .wrapper {
+   .wrapper {
       width: 350px;
     }
-  .wrapper ul li{
+   .wrapper ul li{
       margin-top: 10px;
     }
     .wrap-h{	
@@ -369,20 +370,34 @@ a{
 		font-size: 1em;
 	}	
 	.txt_section h3{
-		font-size: 2em;
+		font-size: 22px;
 	}
 	.txt_section p, .txt_section ul{
-		font-size: 0.6em;
+		font-size: 12px;
 	}
-	#p_title{
-		font-size: 0.7em;
+	.bl_title, #p_title{
+		font-size: 16px;
 	}
-	
+	.bimg img{
+	    width: 60%; height:60%;
+    }
+	.lidmagnit_txt{
+		width: 90%;
+		padding-top: 1%;
+		line-height: 1.2;
+	}
+	.lid_button{
+		padding-top: 2%;
+	}
+	.buttonhead {
+		padding-top: 5%;
+		padding-bottom: 4%;
+	}	
 }
 
 @media screen and (max-width: 340px){
     .social{
-	height: 500px;	
+		height: 500px;	
     }
    .wrapper {
       width: 150px;
@@ -585,7 +600,7 @@ a{
 	margin: 0 auto;
 	padding-top: 20px;
 }
-
+/*
 .btn{
 	  display: inline-block;
 	  padding: 15px 40px;
@@ -626,7 +641,7 @@ a{
     transform: scale(100);
   }
 }
-
+*/
 
 @media screen and (max-width: 640px){
 	.section_lesson img{
