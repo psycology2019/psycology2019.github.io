@@ -85,6 +85,12 @@ header{
 	padding-top: 70px;
 }
 
+.bl_title{
+	font-family: PhilosopherBold;
+    font-size: 36px;
+	text-align:center;
+}
+
 .txt_p{
 	font-family: PhilosopherNormal, "Arial", sans-serif;
     font-size: 18px;
@@ -167,12 +173,6 @@ a{
     font-size: 22px;
     text-align: left;
     line-height: 1.25;
-}
-
-.bl_title{
-	font-family: PhilosopherBold;
-    font-size: 36px;
-	text-align:center;
 }
 
 .bimg{
@@ -322,11 +322,11 @@ a{
     .social{
 		height: 250px;	
     }
-   .wrapper {
+    .wrapper {
         width: 350px;
 	    left: 60%;
     }
-  .wrapper ul li{
+    .wrapper ul li{
         margin-top: 5px;
     }
 }
@@ -360,10 +360,10 @@ a{
     .social{
 		height: 150px;	
     }
-   .wrapper {
+    .wrapper {
         width: 350px;
     }
-   .wrapper ul li{
+    .wrapper ul li{
         margin-top: 10px;
     }
 	.title h1, .title h2{
@@ -375,7 +375,7 @@ a{
 	.txt_section h3{
 		font-size: 22px;
 	}
-	.txt_section p, .txt_section ul{
+	.txt_section p, .txt_section ul, .txt_p{
 		font-size: 12px;
 	}
 	.bl_title, #p_title{
@@ -413,14 +413,15 @@ a{
 /* index page*/
 /* ///////////////////////////////////////////////////*/
 /* about page*/
+.header_about_title{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
 .header_about_title p{
    	font-family: Philosopherbold, "Arial", sans-serif;
     font-size: 2.5vmax;
-	margin: 0 auto;
-}
-
-.section_about{
-	width: 70%;
 	margin: 0 auto;
 }
 
@@ -433,15 +434,8 @@ a{
 	padding-bottom: 2%;
 }
 
-.section_about h2{
-	font-family: Philosopherbold, "Arial", sans-serif;
-    font-size: 24pt;
-	text-align: center;
-}
 
 .section_about p{
-	font-family: PhilosopherNormal, "Arial", sans-serif;
-    font-size: 1.7em;
 	text-align: justify;
 	line-height: 1.25;
 }
@@ -548,18 +542,16 @@ a{
 	display: none
 }
 
+.push li {
+}
+
 }
 @media screen and (max-width: 640px){
 	.section_about p{
-    font-size: 1.3em;
 	line-height: 1;
 }
-
-.section_about{
-	width: 85%;
 }
-}
-/* end about page/
+/* end about page*/
 /*/////////////////////////////////////////////////////*/
 /* lessons page*/
 .section_lesson{
@@ -603,8 +595,8 @@ a{
 	margin: 0 auto;
 	padding-top: 20px;
 }
-/*
-.btn{
+
+.btn_lesson{
 	  display: inline-block;
 	  padding: 15px 40px;
 	  border-radius: 0px;
@@ -644,7 +636,7 @@ a{
     transform: scale(100);
   }
 }
-*/
+
 
 @media screen and (max-width: 640px){
 	.section_lesson img{
@@ -662,6 +654,12 @@ a{
 /*страница consultation */
 .header_consult{
 	height: 250px;
+}
+
+.header_consult h1{
+	font-family: SourseSerif, "Arial", sans-serif;
+	font-size: 5em;
+	text-align: center;	
 }
 
 .product_all{
@@ -889,11 +887,18 @@ a{
 }
 
 }
-   
-
-
 /*страница consultation end*/
+/*////////////////////////////////////////////*/
+/*страница contacts*/
+.tl_header{
+	
+}
+ 
 
+
+
+/*страница contacts end*/
+/*////////////////////////////////////////////*/
 /* nav */
 
 .navbar-default {
