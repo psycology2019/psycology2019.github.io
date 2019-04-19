@@ -680,8 +680,7 @@ a{
 .product_all h2{
 	font-family: SourseSerif, "Arial", sans-serif;
 	font-size: 36px;
-	text-align: center;
-    	
+	text-align: center;    	
 }
 
 .tabs {
@@ -703,22 +702,21 @@ a{
 	display: block;
 	padding: 2rem 0;
 	text-align: center;
-border: 1px solid black;	
 }
 	
-  .tabs [class^="tab"] [type="radio"],
-  .tabs [class*=" tab"] [type="radio"] {
-		border-bottom: 1px solid rgba(239, 237, 239, 0.5);
-		cursor: pointer;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		display: block;
-		width: 100%;
-		-webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out; 
+.tabs [class^="tab"] [type="radio"],
+.tabs [class*=" tab"] [type="radio"] {
+	border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	width: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;			
 }
     .tabs [class^="tab"] [type="radio"]:hover, 
 	.tabs [class^="tab"] [type="radio"]:focus,
@@ -732,19 +730,21 @@ border: 1px solid black;
 }	  
     .tabs [class^="tab"] [type="radio"]:checked + div,
     .tabs [class*=" tab"] [type="radio"]:checked + div {
-      opacity: 1; }
+		opacity: 1; 
+}
     .tabs [class^="tab"] [type="radio"] + div,
     .tabs [class*=" tab"] [type="radio"] + div {
-      display: block;
-      opacity: 0;
-      padding: 2rem 0;
-      width: 90%;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
+		display: block;
+		opacity: 0;
+		padding: 2rem 0;
+		width: 90%;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+}
     .tabs .tab-2 {
-    width: 50%; }
+     width: 50%; }
     .tabs .tab-2 [type="radio"] + div {
       width: 200%;
       margin-left: 200%; }
@@ -867,28 +867,24 @@ border: 1px solid black;
 }
 
 
-.consl h3{
-	font-family: PhilosopherBold, "Arial", sans-serif;
-	font-size: 1.5em;
+@media screen and (max-width: 780px){
+	.product_all h2{
+		font-size: 24px;   	
 }
 
-@media screen and (max-width: 992px){
-	.product_all{
-
-}
 }
 
 @media screen and (max-width: 640px){
 	.header_consult h1{
 		font-size: 42px;
     }
-
-
-
+		.product_all h2{
+		font-size: 16px;   	
+}
 		
   .tabs [class^="tab"] [type="radio"],
   .tabs [class*=" tab"] [type="radio"] {
-    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    border-bottom: 0.1px solid rgba(239, 237, 239, 0.5);
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -903,14 +899,18 @@ border: 1px solid black;
     .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
     .tabs [class*=" tab"] [type="radio"]:hover,
     .tabs [class*=" tab"] [type="radio"]:focus {
-      border-bottom: 0.1px solid #1ee2e7; }
+      border-bottom: 0.1px dotted #1ee2e7; }
 	  
     .tabs [class^="tab"] [type="radio"]:checked,
     .tabs [class*=" tab"] [type="radio"]:checked {
-      border-bottom: 0.3px solid #1ee2e7; }
-	  
-  
-	
+      border-bottom: 0.3px dotted#1ee2e7; }
+	  	
+}
+
+@media screen and (max-width: 340px){
+	.product_all h2{
+		font-size: 14px;   	
+	}
 }
 /*страница consultation end*/
 /*////////////////////////////////////////////*/
