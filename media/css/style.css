@@ -428,10 +428,6 @@ a{
 	margin: 0 auto;
 }
 
-.section_about{
-	border: 1px solid black;
-}
-
 .section_about img{
 	margin-top: 13%;
 }
@@ -1020,6 +1016,8 @@ a{
 .tl_header p{
 	font-size: 28px;
    }
+   
+   
 }
 
 
