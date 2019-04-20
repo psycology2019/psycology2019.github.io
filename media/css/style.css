@@ -913,10 +913,114 @@ a{
 
 /*страница contacts*/
 .tl_header{
-	
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tl_header h2{
+	font-family: SourseSerif, "Arial", sans-serif;
+	font-size: 62px;
+	text-align: center;
+	margin: 0;
+	padding-top:80px;
+}
+
+.tl_header p{
+	margin: 0;
+	font-family: PhilosopherNormal ,Helvetica,Arial,cursive;
+	font-size: 55px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.info_contact{
+	text-align: center;
+	padding-top: 25px;
+}
+
+.info_contact p{
+	font-size: 34px;
+    font-weight: 300;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.phone a {
+	text-decoration: none;
+	color:  #929292;
+}
+
+.phone img {
+	display :inline;
+
+}
+
+.phone{
+	padding-bottom: 25px;
+	font-size: 30px;
+}
+
+.phone a:hover{
+	text-decoration: none;
+	color: #3f3f3f;
+}
+
+#vb_mb{
+	display:none
+}
+
+.maps_room{
+	width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+	text-align:center;
+}
+
+.contact_room {
+	text-align:center;
+}
+
+.contact_room img{
+	width: 40%;
+	text-align:center;
+}
+
+.contact_maps{
+}
+
+#txt {
+	text-transform: uppercase;
+    font-family: PhilosopherNormal ,Helvetica,Arial,cursive;
+	font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #343f3e;
+}
+
+.form_contact{
+	width: 70%;
+	margin:0 auto;
 }
  
+@media (max-width:1024px){
+    #vb_pk{
+		display:none}
+    #vb_mb{
+		display:block}
+}
 
+
+@media screen and (max-width: 640px){
+	.tl_header h2{
+		font-size: 42px;
+    }
+
+.tl_header p{
+	font-size: 28px;
+   }
+}
 
 
 /*страница contacts end*/
@@ -1075,28 +1179,45 @@ footer a{
 
 .oferta_all h3{
 	font-family: Philosopherbold;
-	font-size: 22pt;
+	font-size: 36px;
 	text-align: center;
 }
 
 .oferta_all p{
 	font-family: PhilosopherNormal;
-	font-size: 16pt;
+	font-size: 18px;
 	text-align: justify;
 }
 
 #head_ul{
 	font-family: PhilosopherBold;
-	font-size: 16pt;
+	font-size: 18px;
 }
 
 #info_ul{
 	font-family: Philosopher;
-	font-size: 15pt;
+	font-size: 18px;
 	text-align: justify;
 	list-style-type: none;
 }
 
+@media screen and (max-width: 640px){
+.oferta_all h3{
+	font-size: 22px;
+}
+
+.oferta_all p{
+	font-size: 12px;
+}
+
+#head_ul{
+	font-size: 12px;
+}
+
+#info_ul{
+	font-size: 12px;
+   }
+}
 
 #go-top {
   position: fixed; 
