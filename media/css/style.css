@@ -369,6 +369,14 @@ a{
     .wrapper ul li{
         margin-top: 10px;
     }
+	
+	.social_contact{
+		height: 250px;	
+    }
+    .wrapper_contact {
+       width: 350px;
+    }
+	
 	.title h1, .title h2{
 		font-size: 3em;
 	}
