@@ -8,7 +8,7 @@ src: url(fonts/Calluna-Regular-webfont.woff); /* обычный шрифт */
 }  
 @font-face {
 font-family: SourseSerif3;
-src: url(fonts/marmelad.woff ); /* курсив мой */
+src: url(fonts/philosopherbolditalic.woff ); /* курсив мой */
 }
 @font-face {
 font-family: SourseSerif4;
@@ -98,6 +98,14 @@ header{
 
 #bold_text{	
    	font-family: PhilosopherBold, "Arial", sans-serif;	
+}
+
+#txt_logo{
+	font-family: SourseSerif3, "Arial", sans-serif;
+	font-size: 26px;
+	text-align: center;
+	color: #1ee2e7;
+	line-height: 0.8;
 }
 
 
@@ -904,18 +912,46 @@ a{
 }
 
 .btn-prod{
-  width: 550px;
-  height: 300px;
-  padding: 1em 3em;
-  border: 3px solid #1ee2e7;
-  font-family: PhilosopherNormal, "Arial", sans-serif;
-  font-size: 36pt;  
-  transition: all 300ms ease;
-  box-shadow: 0px 4px 10px 2px #1ee2e7;
+	width: 550px;
+	height: 300px;
+	padding: 1em 3em;
+	border: 3px solid #1ee2e7;
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+	font-size: 36pt;  
+	transition: all 300ms ease;
+	box-shadow: 0px 4px 10px 2px #1ee2e7;
+}
+/*//////////////////////////////////////////*/
+/*page revies*/
+
+.revies_flex_cont {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	width: 100%;
+	padding-top: 3%;
 }
 
+.body_flex_box {
+	margin: 2px;
+	padding: 2px;
+	flex: 0 1 30%;
+}
 
-/*страница contacts*/
+.body_flex_box p{
+	font-family: PhilosopherNormal, "Arial", sans-serif;
+    font-size: 16px;
+	text-align:center;
+}
+
+@media screen and (max-width: 640px){
+	.body_flex_box p{
+    font-size: 10px;
+}
+}
+/*//////////////////////////////////////////*/
+/*page contacts*/
 .tl_header{
 	width: 90%;
 	margin: 0 auto;
@@ -943,7 +979,7 @@ a{
 	padding-top: 25px;
 }
 
-.info_contact p{
+.info_contact h3{
 	font-size: 34px;
     font-weight: 300;
     color: #3f3f3f;
@@ -958,7 +994,6 @@ a{
 
 .phone img {
 	display :inline;
-
 }
 
 .phone{
@@ -1003,9 +1038,10 @@ a{
     color: #343f3e;
 }
 
-.form_contact{
+.form_contact, .revies_form {
 	width: 70%;
 	margin:0 auto;
+	padding-bottom: 25px;
 }
  
 @media (max-width:1024px){
@@ -1021,11 +1057,9 @@ a{
 		font-size: 42px;
     }
 
-.tl_header p{
-	font-size: 28px;
-   }
-   
-   
+	.tl_header p{
+		font-size: 28px;
+   }  
 }
 
 
@@ -1112,6 +1146,10 @@ a{
         -moz-transition: all .3s;
         transition: all .3s;
     }
+	
+	#txt_logo{
+		font-size: 24px;
+	}
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
