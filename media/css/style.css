@@ -216,6 +216,14 @@ a{
 	text-align: center;
 }
 
+.buttonhead p {
+	font-family: PhilosopherBold, sans-serif;
+	font-size: 24px;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	color: #ff3836;
+}
+
 .buttonhead a {	
 	text-decoration: none;
 	outline: none;
@@ -1182,7 +1190,7 @@ footer a{
 	display: block;
 	font-size: 16px;
 	margin-bottom: 5px;
-	color: #fff;
+	color: #383434;
 }
 
 .pay_system{
