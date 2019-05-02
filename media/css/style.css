@@ -118,16 +118,17 @@ a{
 	margin-left: 10%;
 	display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;	
+    justify-content: space-around;
 }
 
 .headline{	
-	margin-top:10%;
+    width: 60%;
+	margin-top:10%;	
 }
 
 .title h1{
 	font-family: SourseSerif, "Arial", sans-serif;
-	font-size: 5em;
+	font-size: 3.8em;
 	text-align: center;	
 }
 
@@ -144,8 +145,12 @@ a{
 	text-align: center;
 }
 
-.headfoto{	
-	margin-top:70px;
+.headfoto{
+	margin-top:70px;	
+}
+
+.headfoto img{
+	bottom:0;
 }
 
 .section_info, .txt_section, .quest_soc{
@@ -156,7 +161,7 @@ a{
 
 .txt_section h3{
 	font-family: philosopherbolditalic;
-	font-size: 48px;
+	font-size: 42px;
 	text-align: center;	
 }
 
@@ -211,16 +216,16 @@ a{
 }
 	
 .buttonhead {
-	padding-top: 20%;
+	padding-top: 30%;
 	padding-bottom: 4%;
 	text-align: center;
 }
 
 .buttonhead p {
 	font-family: PhilosopherBold, sans-serif;
-	font-size: 24px;
+	font-size: 30px;
 	margin-bottom: 5%;
-	margin-top: 5%;
+	margin-top: 10%;
 	color: #ff3836;
 }
 
@@ -229,7 +234,7 @@ a{
 	outline: none;
 	display: inline-block;
 	width: 270px;
-	padding: 12px 30px;
+	padding: 15px 30px;
 	margin: auto;
 	border-radius: 10px;
 	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
@@ -353,18 +358,30 @@ a{
     .wrap-h{	
 		width: 90%;
 		margin: 0 auto;	
-    } 		
+    }
+	.headline{	
+	}	
+	.title h1, .title h2{
+		font-size: 2.8em;
+	}
+	.title h3{
+		font-size: 1em;
+	}		
 	.title{
 		width: 90%;
 		margin: 0 auto;
-		padding-top:10%;
+		padding-top:1%;
 		text-align: center;
 	}
 	.title h3{
 		margin-top: 5%;}
 	.section_info, .txt_section, .quest_soc{
 		width: 90%;
-    }	
+    }
+	.buttonhead {
+		padding-top: 10%;
+
+	}	
 	.lid_button{
         margin-top:2%;}
 	.wrapper {
@@ -394,7 +411,7 @@ a{
     }
 	
 	.title h1, .title h2{
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.title h3{
 		font-size: 1em;
