@@ -359,7 +359,8 @@ a{
 		width: 90%;
 		margin: 0 auto;	
     }
-	.headline{	
+	.headline{
+        width: 100%;		
 	}	
 	.title h1, .title h2{
 		font-size: 2.8em;
@@ -372,6 +373,7 @@ a{
 		margin: 0 auto;
 		padding-top:1%;
 		text-align: center;
+		
 	}
 	.title h3{
 		margin-top: 5%;}
