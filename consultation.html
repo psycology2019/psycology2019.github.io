@@ -10,6 +10,7 @@
   <link type="text/css" rel="stylesheet" href="media/bootstrap/css/bootstrap.min.css" />
   <link type="text/css" rel="stylesheet" href="media/css/style.css" />
   <link rel="stylesheet" href="media/font-awesome/css/font-awesome.min.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
@@ -65,15 +66,37 @@
 	</header>
     <section class="section_product">
 	 <div class="product_all block_indent">	 
-	  <div class="tabs">
-       <div class="tab-2">
+	  <div class="tabs">      
+	  <div class="tab-2">
+		<label for="tab2-2">
+		 <h2>Личная консультация</h2>
+		 <img src="media/img/offline_my.png" alt="OffLine" title="OffLine">
+		</label>
+		<input id="tab2-2" name="tabs-two" type="radio">
+		<div class="txt_p">
+		  <p> <span id='bold_text'> Оффлайн Консультация</span> - это очная профессиональная психологическая помощь. </p>
+		  <p> <span id='bold_text'> Я провожу индивидуальные консультации и занятия в комфортабельном кабинете, расположенном в уютном и тихом месте, где нас ничто и никто не потревожит. </span> </p>
+		  <p> Когда вы делитесь своей проблемой с другими людьми, они не просто вас слушают, но, как правило, еще и активно эмоционально включаются. А значит,  оценивают, критикуют, спасают, защищаются, возвышаются, игнорируют. </p>
+		  <p> Профессиональный психолог  же создает для клиента безопасное, принимающее поле. Он видит суть, слушает с эмпатией, сохраняя при этом свою автономность и личностную устойчивость. Он вместе с клиентом шаг за шагом исследует проблему, поддерживает клиента и помогает вернуть душевные силы и находить верные решения. В терапевтическом процессе  создается уникальная среда общения, которую невозможно найти где-то в другом месте. </p>
+          <p> <span id='bold_text'> Важно понимать, </span> что эффективность психотерапевтического процесса зависит не только от умения психолога устанавливать контакт, от его практического опыта и профессиональной компетенции. Значительная степень ответственности за результат терапии лежит на самом клиенте, его личной мотивации и максимальной включенности в работу над собой. </p>
+		  <p> Длительность 60 мин. </p>
+		  <p> Стоимость по запросу</p>
+		 <div class="button-parent">
+		  <div class="button-parent--inner">
+			<div class="button-item">
+			  <a href="" class="btn-buy">Записаться</a>
+		   </div>	
+		  </div>
+		</div>
+		</div>
+	  </div>
+<div class="tab-2">
 		<label for="tab2-1">
-		 <h2>КОНСУЛЬТАЦИЯ ONLINE</h2>
+		 <h2>Консультация Online</h2>
 		 <img src="media/img/online_my.png" alt="OnLine" title="OnLine">
 		</label>
 		<input id="tab2-1" name="tabs-two" type="radio" checked="checked">
 		<div class="txt_p">
-		  <h3 class="bl_title">Описание Консультации OnLine</h3>
 		  <p><span id='bold_text'>Онлайн Консультация</span> - это современная профессиональная психологическая помощь в любой точке мира.</p>
           <p><span id='bold_text'>Я провожу онлайн Консультации по Skype,</span> так как аудио и видео контакт создаёт максимально приближенную к реальности атмосферу живого общения. <br> </p>
           <p><span id='bold_text'>Преимущества онлайн консультации:</span></p>
@@ -95,33 +118,59 @@
 			  </div>
 			</div>					 				  
 		</div>
-	  </div>
-	  <div class="tab-2">
-		<label for="tab2-2">
-		 <h2>КОНСУЛЬТАЦИЯ OFFLINE</h2>
-		 <img src="media/img/offline_my.png" alt="OffLine" title="OffLine">
-		</label>
-		<input id="tab2-2" name="tabs-two" type="radio">
-		<div class="txt_p">
-		  <h3 class="bl_title">Описание Консультации OffLine</h3>
-		  <p> <span id='bold_text'> Оффлайн Консультация</span> - это очная профессиональная психологическая помощь. </p>
-		  <p> <span id='bold_text'> Я провожу индивидуальные консультации и занятия в комфортабельном кабинете, расположенном в уютном и тихом месте, где нас ничто и никто не потревожит. </span> </p>
-		  <p> Когда вы делитесь своей проблемой с другими людьми, они не просто вас слушают, но, как правило, еще и активно эмоционально включаются. А значит,  оценивают, критикуют, спасают, защищаются, возвышаются, игнорируют. </p>
-		  <p> Профессиональный психолог  же создает для клиента безопасное, принимающее поле. Он видит суть, слушает с эмпатией, сохраняя при этом свою автономность и личностную устойчивость. Он вместе с клиентом шаг за шагом исследует проблему, поддерживает клиента и помогает вернуть душевные силы и находить верные решения. В терапевтическом процессе  создается уникальная среда общения, которую невозможно найти где-то в другом месте. </p>
-          <p> <span id='bold_text'> Важно понимать, </span> что эффективность психотерапевтического процесса зависит не только от умения психолога устанавливать контакт, от его практического опыта и профессиональной компетенции. Значительная степень ответственности за результат терапии лежит на самом клиенте, его личной мотивации и максимальной включенности в работу над собой. </p>
-		  <p> Длительность 60 мин. </p>
-		  <p> Стоимость по запросу</p>
-		 <div class="button-parent">
-		  <div class="button-parent--inner">
-			<div class="button-item">
-			  <a href="" class="btn-buy">Записаться</a>
-		   </div>	
-		  </div>
-		</div>
-		</div>
-	  </div>
+	  </div>	  
+	  
+	  
     </div>
 	</div>
+
+    <div class="container">
+		<div class="my-5 mx-auto text-center">
+			<button class="btn btn-dark btn-lg" data-toggle="modal" data-target="#exampleModal">Открыть модальное окно</button>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="contactForm" action="handler.php" method="post">
+						<div class="form-group">
+							<label for="name">Ваше имя:</label>
+							<input id="name" class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="form-group">
+							<label for="email">Ваш E-mail:</label>
+							<input id="email" class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
+						</div>
+						<div class="form-group">
+							<label for="phone">Ваш телефон:</label>
+							<input id="phone" class="form-control" name="phone" required type="text">
+						</div>
+						<div class="form-group">
+							<label for="message">Текст сообщения:</label>
+							<textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+						</div>
+						<div class="form-group form-check">
+							<input id="check" class="form-check-input" checked type="checkbox"><label class="form-check-label" for="check">Я выражаю согласие на обработку персональных данных согласно <a href="confedencialnost.html">политике конфиденциальности</a></label>
+						</div>
+						<button id="button" class="btn btn-success" type="submit">Записаться!</button>
+						<div class="result">
+							<span id="answer"></span>
+							<span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
 	</section>
 	<footer>
 	 <div class="container block_indent">

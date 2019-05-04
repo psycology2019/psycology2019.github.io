@@ -129,20 +129,27 @@ a{
 .title h1{
 	font-family: SourseSerif, "Arial", sans-serif;
 	font-size: 3.8em;
-	text-align: center;	
+	text-align: center;
+	color: #1ee2e7;
+    text-shadow: #5C6564 1px 1px 0, #5C6564 -1px -1px 0, 
+                 #5C6564 -1px 1px 0, #5C6564 1px -1px 0;
+	
 }
 
 .title h2{
 	font-family: SourseSerif4, "Arial", sans-serif;
 	font-size: 4em;
-	text-align: center;
-    	
+	text-align: center; 
+
 }
-.title h3{
+
+
+.title p{
 	margin-top: 15%;
 	font-family: PhilosopherNormal, "Arial", sans-serif;
 	font-size: 2em;
 	text-align: center;
+	color: #5C6564;
 }
 
 .headfoto{
@@ -161,7 +168,7 @@ a{
 
 .txt_section h3{
 	font-family: philosopherbolditalic;
-	font-size: 42px;
+	font-size: 52px;
 	text-align: center;	
 }
 
@@ -371,7 +378,7 @@ a{
 	.title{
 		width: 90%;
 		margin: 0 auto;
-		padding-top:1%;
+		padding-top:3%;
 		text-align: center;
 		
 	}
@@ -454,6 +461,9 @@ a{
     .wrapper ul li{
       margin:15px;
     }
+		.title h1, .title h2{
+		font-size: 1.6em;
+	}
 }
 
 /* index page*/
@@ -809,6 +819,7 @@ a{
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
+	border: 1px solid black;
 }
 
 .section_product a {
@@ -826,7 +837,6 @@ a{
 .btn-buy {
     padding: 1% 3%;
     border: 3px solid #4A90E2;
-    transition: all 300ms ease;
     box-shadow: 0px 4px 10px 2px #4A90E2;
 }
 
@@ -838,7 +848,6 @@ a{
 	top: 10%;
 	left: 10%;
 	background: #4A90E2;
-	transition: all 0ms ease;
 }
 .btn-buy:after {
 	content: '';
@@ -848,7 +857,6 @@ a{
 	top: 10%;
 	left: 10%;
 	background: #4A90E2;
-	transition: all 0ms ease;
 	z-index: -1;
 }
 
@@ -865,7 +873,7 @@ a{
 	top: 10%;
 	left: 10%;
 	background: #4A90E2;
-	transition: all 300ms ease;
+
 }
 .btn-buy:hover:after {
 	content: '';
@@ -874,8 +882,6 @@ a{
 	position: absolute;
 	top: 10%;
 	left: 10%;
-	transition: all 300ms ease;
-	transition-delay: 350ms;
 }	  
 	
 .tab-2 img{
