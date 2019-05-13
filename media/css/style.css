@@ -437,7 +437,7 @@ a{
 		font-size: 22px;
 	}
 	.txt_section p, .txt_section ul, .txt_p{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.bl_title, #p_title{
 		font-size: 20px;
@@ -620,7 +620,7 @@ a{
 		line-height: 1;
 	}
 	.push {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
 /* end about page*/
