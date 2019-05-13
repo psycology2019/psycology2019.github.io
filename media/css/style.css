@@ -112,6 +112,13 @@ header{
 a{
 	color: #1ee2e7;
 }
+.color_txt{
+	    color: #1bcacf;
+}
+
+.center{
+	display:block;
+    margin:0 auto;}
 /* index page*/
 .wrap-h{	
 	width: 90%;
@@ -130,9 +137,6 @@ a{
 	font-family: SourseSerif, "Arial", sans-serif;
 	font-size: 3.8em;
 	text-align: center;
-	color: #1ee2e7;
-    text-shadow: #5C6564 1px 1px 0, #5C6564 -1px -1px 0, 
-                 #5C6564 -1px 1px 0, #5C6564 1px -1px 0;
 	
 }
 
@@ -143,13 +147,11 @@ a{
 
 }
 
-
 .title p{
 	margin-top: 15%;
 	font-family: PhilosopherNormal, "Arial", sans-serif;
-	font-size: 2em;
+	font-size: 25px;
 	text-align: center;
-	color: #5C6564;
 }
 
 .headfoto{
@@ -169,7 +171,7 @@ a{
 .txt_section h3{
 	font-family: philosopherbolditalic;
 	font-size: 52px;
-	text-align: center;	
+	text-align: center;
 }
 
 .txt_section p{
@@ -198,6 +200,12 @@ a{
 .bimg{
 	text-align:center;
 }
+.test{
+	width: 100%;
+  }
+.test img{
+	vertical-align: center;
+}  
 			
 .lidmagnit_txt{
 	width: 70%;
@@ -223,8 +231,8 @@ a{
 }
 	
 .buttonhead {
-	padding-top: 30%;
-	padding-bottom: 4%;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	text-align: center;
 }
 
@@ -247,7 +255,7 @@ a{
 	box-shadow: 0 0 40px 40px #ff3836 inset, 0 0 0 0 #ff3836;
 	font-family: PhilosopherBold, sans-serif;
 	font-weight: bold;
-	font-size: 0.8em;
+	font-size: 0.5em;
 	letter-spacing: 1px;
 	color: white;
 	transition: .15s ease-in-out;
@@ -372,7 +380,7 @@ a{
 	.title h1, .title h2{
 		font-size: 2.8em;
 	}
-	.title h3{
+	.title p{
 		font-size: 1em;
 	}		
 	.title{
@@ -382,7 +390,7 @@ a{
 		text-align: center;
 		
 	}
-	.title h3{
+	.title p{
 		margin-top: 5%;}
 	.section_info, .txt_section, .quest_soc{
 		width: 90%;
@@ -422,14 +430,14 @@ a{
 	.title h1, .title h2{
 		font-size: 2em;
 	}
-	.title h3{
+	.title p{
 		font-size: 1em;
 	}	
 	.txt_section h3{
 		font-size: 22px;
 	}
 	.txt_section p, .txt_section ul, .txt_p{
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.bl_title, #p_title{
 		font-size: 20px;
@@ -461,7 +469,7 @@ a{
     .wrapper ul li{
       margin:15px;
     }
-		.title h1, .title h2{
+	.title h1, .title h2{
 		font-size: 1.6em;
 	}
 }
@@ -612,7 +620,7 @@ a{
 		line-height: 1;
 	}
 	.push {
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 /* end about page*/
@@ -722,7 +730,15 @@ a{
 .header_consult h1{
 	font-family: SourseSerif, "Arial", sans-serif;
 	font-size: 68px;
-	text-align: center;	
+	text-align: center;
+    color: #535353;	
+}
+
+.consl_tx{
+	font-size: 28px;
+	text-align:center;
+	color: #535353;
+	
 }
 
 .product_all{
@@ -819,10 +835,9 @@ a{
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
-	border: 1px solid black;
 }
 
-.section_product a {
+.product_all a {
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -903,6 +918,9 @@ a{
     }
 	.product_all h2{
 		font-size: 16px;   	
+	}
+	.consl_tx{
+		font-size: 20px;
 	}
 		
 	.tabs [class^="tab"] [type="radio"],
@@ -1063,7 +1081,6 @@ a{
 }
 
 #txt {
-	text-transform: uppercase;
     font-family: PhilosopherNormal ,Helvetica,Arial,cursive;
 	font-size: 24px;
     font-weight: 400;
